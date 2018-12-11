@@ -2,10 +2,8 @@ function image_hist(bins)
 img = imread('kierowca.png');
 o = rgb2gray(img);
 [M,N]=size(o);
-min_value = 0;
 max_value = 265;
-bins_width = max_value / bins                        %szerokoœæ przedzia³ów
-bin_intervals = [min_value:bins_width:max_value]     %nowe zakresy przedzia³ów
+bins_width = max_value / bins
 
 t=1:256;
 count=0;
